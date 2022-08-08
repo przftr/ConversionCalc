@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>ConversionCalc</title>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="row header">
+            <section class="flex-item header">
+                <img src="SolarLogo.png" alt="Solar Atmospheres Logo">
+            </section>
+            <section class="flex-item header">
+                <h1>ConversionCalc</h1>
+            </section>
+        </div>
+        <div class="row" id="before">
+            <section class="flex-item">
+                <input type="text" id="startVal" name="input" placeholder="VALUE">
+            </section>
+            <section class="flex-item">
+                <select id="startScale">
+                    <option value="">FROM</option>
+                    <option value="HRC">HRC</option>
+                    <option value="HR15N">HR15N</option>
+                    <option value="HV.5">HV.5</option>
+                    <option value="HK.5">HK.5</option>
+                </select>
+            </section>
+            <section class="flex-item">
+                <select id="endScale">
+                    <option value="">TO</option>
+                    <option value="HRC">HRC</option>
+                    <option value="HR15N">HR15N</option>
+                    <option value="HV.5">HV.5</option>
+                    <option value="HK.5">HK.5</option>
+                    <option value="UTS">Ultimate Tensile Strength</option>
+                </select>
+            </section>
+            <section class="flex-item">
+                <button id="calculate">Calculate</button>
+            </section>
+        </div>
+        <div class="row" id="after">
+            <section class="flex-item">
+                <h3>All conversion are approximate and <span>MUST</span> be</h3>
+                <h3>reported in the following format per ASTM E 140.</h3>
+            </section>
+            <section class="flex-item">
+                <h2 id="result"></h2>
+            </section>
+            <section class="flex-item">
+                <button id="reset">Reset</button>
+            </section>
+        </div>
+    </div>
+   <script src="main.js"></script>
+</body>
+</html>
